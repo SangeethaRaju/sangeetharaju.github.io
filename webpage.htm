@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="abcd.css" type="text/css" >
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" type="text/css">
+
+<meta name="viewport content="width=device-width, initial-scale=1.0">
+<style>
+#header
+{ background-image: url();}
+
+#content
+{width: 70%;
+float: left;
+}
+
+#overall1
+{line-height: 25px;
+border-radius: 5px;}
+
+#style
+{border-radius: 1px;
+background: lightslategrey;
+height: 70px;
+width: 70px;
+padding: 10px;
+font-size: 25px;
+color: white;
+text-align: center;
+line-height:150%;
+cursor: pointer;
+} 
+#style1
+{ border-radius:1px;
+background: dimgrey;
+height: 60px;
+width: 60px;
+font-size: 20px;
+color: white;
+text-align: center;
+line-height: 90%;
+padding: 11px;
+cursor: pointer;}
+
+
+#overall
+{ width: 170px;
+height: 170px;
+border: 5px solid black;
+text-align: center;
+padding: 20px;
+background: lightslategrey;}
+
+#screen
+{ width: 140px;
+height: 30px;
+border-radius: 3px;}
+
+#style2
+{ border-radius: 1px;
+background: dimgrey;
+height: 50px;
+width: 50px;
+font-size: 20px;
+color: white;
+text-align: center;
+line-height: 170%;
+padding: 8px;
+cursor: pointer;}
+
+
+
+#body
+{ background-color: white;
+border-radius: 5px;
+padding: 3% 5%;
+margin-top: 2%;	 
+}
+
+#back
+{background-color: black;
+margin: 0 auto;
+width: 70%;
+clear: both;
+}
+
+#stylez
+{ font-family:'Tangerine', serif;
+font-size: 70px;
+color: olivedrab;
+font-style: bold italic;
+}
+
+#foot
+{font-family:'Tangerine', serif;
+font-style: italic;
+color: olive;
+font-size: 34px;
+margin:20px;
+}
+
+#side
+{float: left;
+width: 21%;
+border-radius: 5px;
+background-color: white;
+margin-left: 3%;
+margin-top: 2%;
+margin-bottom:2%;
+padding: 2% 3%;}
+
+p
+{font-family: "courier new";
+line-height: 75%;
+display: inline;}
+
+</style>
+
+
+</head>
+
+<body id="back">
+<header>
+<img src="http://www2.shutterstock.com/blog/wp-content/uploads/sites/5/2012/09/img13.jpg" width="100%" height="250px">
+</header>
+<br>
+<div id="overall1">
+<div id="content">
+  <div id="body"> 
+    <header>
+         <h1 id="stylez"> What'sInAName</h1>
+    </header>
+      <footer> 
+       <p id="foot">- By Sangeetha Rajasekeran. (No, not related to Rishi.) </p>
+      </footer>
+<br>
+<p> Hello there! </p>
+<p> So, I have been given a free pass to brag about myself. Unfamiliar grounds. I'll try my best. </p><br>
+<p>Name's Sangeetha (quite evident from the By), a EEE sophomore. Music is life, althought my name has no relevance in this.
+An over-enthusiastic, books hating, revolving chairs loving Cumberbitch. I swear that's not an insult. 
+Recent Heisenberg fan, long time Tyrion lover. 
+</p>
+<br>
+<p>Highly non-technical interests. WhatAmIDoingHere. </p>
+<br>
+<p> Event Manager at Pragyan, member of the Festember Events Team and NITTFEST PR  Team, School Captain, Debater and urm, a decent tenis player, I guess. I have no idea what more to say. What do I
+intend to do? Hopefully, learn more of WebDev. Improve my game. MocTail aspirant. That's pretty much all.
+<br>
+</div>
+
+<div id="body">
+<h3 id="foot"> <b> The Calculator </b> </h3>
+<br>
+<br>
+<p> This is one of the two calculators that I worked on. THe idea for this, stumbled upon StackOverflow, and tweaked a bit. THe other, built from scratch but highly crude. Working on it.
+</p>
+<br>
+<br>
+<FORM NAME="Calc">
+<TABLE id="customers" border=4>
+<TR>
+<TD>
+<INPUT TYPE="text"   NAME="Input" Size="14">
+
+<input type="button" name="dot" value=" C " OnClick="Calc.Input.value=''"> 
+<br>
+</TD>
+</TR>
+<TR>
+<TD>
+<INPUT type="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+<INPUT type="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+<INPUT type="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+<br>
+<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
+<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+<INPUT TYPE="button" NAME="minus" VALUE="  -   " OnClick="Calc.Input.value += ' - '">
+<br>
+<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
+<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+<br>
+<INPUT TYPE="button" NAME="clear" VALUE="  .   " OnClick="Calc.Input.value += '.'">
+<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
+<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+<br>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+
+
+</div>
+</div>
+
+<div id="side"> 
+<h3 id="foot"><b>Contact Info</b> </h3>
+<br>
+<p>Not that anyone cares </p>
+<br>
+<br>
+<p><b><u>sangeetha1236@gmail.com</u></b></p>
+</div>
+
+
+</body>
+</html>
