@@ -1,0 +1,150 @@
+<html>
+<head>
+ <style> 
+body
+{background-color: black;
+}
+#style1
+{ display: inline;
+line-height: 10px;
+}
+#style2
+{ display: inline;
+line-height: 5px;}
+.base
+{
+background-color:#404040;
+height:180px;
+width:180px;
+border-radius:1px;
+position:relative;
+top:80px;
+
+}
+.opera
+{
+background-color:dimgrey;
+height:180px;
+width:50px;
+border-radius:1px;
+position:relative;
+top:0px;
+left:85%;
+}
+.extra
+{
+background-color:aquamarine;
+height:180px;
+width:15px;
+border-radius:1px;
+position:relative;
+top:0px;
+left:85%;
+}
+.elts
+{
+position:fixed;
+top:100px;
+left:1%
+}
+.oper
+{
+width:32px;
+height:15px;
+border:none;
+margin-left:7px;
+margin-top: 7px;
+cursor:pointer;
+color:white;
+background-color:dimgrey;
+font-size:12px;
+
+}
+.num
+{
+width:36px;
+height:25px;
+border:none;
+margin-left:7px;
+margin-top: 7px;
+cursor:pointer;
+color:white;
+background-color:#404040;
+font-size: 17px;}
+
+
+.disp
+{
+background-color:white;
+width:180px;
+bottom:50px;
+left: -196px;
+height:50px;
+position:relative;
+}
+.disp input
+{
+position:relative;
+left:0px;
+top:0px;
+height:50px;
+color:black;
+background-color:white;
+font: bold 15px Georgia, serif;
+text-align:right;
+} 
+</style> 
+<script>
+function clr(x)
+{ 
+document.getElementById("screen").value=x;
+}
+function operelt(x)
+{ document.getElementById("screen").value+=x;
+}
+function evalua() 
+{ var str= document.getElementById("screen").value;
+var str2= eval(str);
+document.getElementById("screen").value= str2;
+
+}
+</script>
+
+</head>    
+<body>
+
+<div class="base">
+<div class="opera">
+<div class="extra">    
+<div class="disp"><input type="text" id="screen" readonly size="22" ></div>
+<div class="elts">
+    <p id="style1"><input type="button" class="num" value="7" onclick='operelt("7")'> </p>
+    <p id="style1">   <input type="button" class="num" value="8" onclick='operelt("8")'></p>
+     <p id="style1">  <input type="button" class="num" value="9" onclick='operelt("9")'></p>
+     <p id="style2">  <input type="button" class="oper" value="DEL" onclick='clr(" ")'></p>
+<br>
+    <p id="style1"><input type="button" class="num" value="4" onclick='operelt("4")'></p>
+     <p id="style1">  <input type="button" class="num" value="5" onclick='operelt("5")'></p>
+     <p id="style1">  <input type="button" class="num" value="6" onclick='operelt("6")'></p>
+     <p id="style2">  <input type="button" class="oper" value="/" onclick='operelt("/")'></p>
+<br>
+    <p id="style1"><input type="button" class="num" value="1" onclick='operelt("1")'></p>
+    <p id="style1">   <input type="button" class="num" value="2" onclick='operelt("2")'></p>
+    <p id="style1">   <input type="button" class="num" value="3" onclick='operelt("3")'></p>
+    <p id="style2">   <input type="button" class="oper" value="x" onclick='operelt("*")'></p>
+<br>
+    <p id="style1"><input type="button" class="num" value="." onclick='operelt(".")'></p>
+     <p id="style1">  <input type="button" class="num" value="0" onclick='operelt("0")'></p>
+     <p id="style1">  <input type="button" class="num" value="=" onclick='evalua()'></p>
+     <p id="style2">  <input type="button" class="oper" value="-" onclick='operelt("-")'></p>
+<br>
+    <p id="style1"><input type="button" class="num" value=" " onclick='operelt("")'></p>
+    <p id="style1">    <input type="button" class="num" value=" " onclick='operelt("")'></p>
+      <p id="style1">  <input type="button" class="num" value=" " onclick='operelt("")'></p>
+      <p id="style2">  <input type="button" class="oper" value="+" onclick='operelt("+")'></p>
+
+</div>
+</div>
+
+</body>
+</html>
