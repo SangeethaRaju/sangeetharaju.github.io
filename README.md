@@ -6,7 +6,7 @@ Hi. Follow the following steps to implement the same page:
 3. There are no external sheets, so, no worries. <br>
 4. You're good to go. Just pen index in your web browser. <br>
 Lollipop calculator: <br>
-![alt tag]lollipop.png
+![alt tag](lollipop.png)
 <br>
 My calculator: <br>
-![alt tag] mycalc.png
+![alt tag] (mycalc.png)
